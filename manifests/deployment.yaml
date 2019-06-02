@@ -1,0 +1,35 @@
+apiVersion: apps/v1                 # API Version of this Object
+kind: Deployment                    # This Object Type
+metadata:                           # Allows you to specify custom metadata
+  name: $APP                       # Specifies the name of this object
+spec:                               # The official specification matching object type schema
+  selector:                         # Label selector for pods
+    matchLabels:                    # Must match these label(s)
+      app: $APP                    # Custom label with value
+  template:                         # Template describes the pods that are created
+    metadata:                       # Standard objects metadata
+      labels:                       # Labels used to group/categorize objects
+        app: $APP                  # The name of this template
+    spec:                           # Specification of the desired behaviour of this pod
+      imagePullSecrets:
+        - name: docker-registry-discord-bot-helpbot
+      containers:                   # List of containers belonging to this pod (cannot be changed/updated)
+        - name: $APP                 # Name of this container
+          image: $IMAGE                # Docker image used for this container
+          ports:
+            - containerPort: $PORT
+          readinessProbe:
+            httpGet:
+              path: /monitoring/is_alive
+              port: $PORT
+            initialDelaySeconds: 10
+            timeoutSeconds:      5
+            periodSeconds:       1
+          livenessProbe:
+            httpGet:
+              path: /monitoring/is_alive
+              port: $PORT
+            initialDelaySeconds: 10
+            timeoutSeconds:      5
+            periodSeconds:       5
+

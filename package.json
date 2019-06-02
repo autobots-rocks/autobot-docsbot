@@ -1,0 +1,25 @@
+{
+    "name": "@autobots/autobot-docsbot",
+    "version": "1.0.0",
+    "description": "devdocs.io documentation bot",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@autobot/common": "^1.1.18",
+        "@autobot/module-docsbot": "^1.0.41",
+        "@nestjs/common": "^6.2.4",
+        "@nestjs/core": "^6.2.4",
+        "@nestjs/platform-express": "^6.2.4",
+        "rxjs": "^6.5.2"
+    },
+    "devDependencies": {
+        "@types/node": "^12.0.4",
+        "typescript": "^3.5.1"
+    }
+}

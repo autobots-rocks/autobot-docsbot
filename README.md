@@ -43,10 +43,10 @@ This bot comes with its own `Dockerfile`.
 
 ### Building
 ```bash
-docker built -t docsbot .
+docker build -t docsbot .
 ```
 
-### Running
+### Running 
 ```bash
 docker run -d -p8080:8080 --name docsbot docsbot
 ```

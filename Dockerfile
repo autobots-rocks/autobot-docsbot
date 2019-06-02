@@ -20,5 +20,5 @@ USER bot
 #
 # Starts the bot when the docker container is started
 #
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npm", "run", "start"]
 

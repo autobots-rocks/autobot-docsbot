@@ -35,6 +35,8 @@ Sun Jun 02 2019 14:01:52 GMT-0500 (Central Daylight Time): Command Registered: !
 Sun Jun 02 2019 14:01:52 GMT-0500 (Central Daylight Time): Bot Started
 Sun Jun 02 2019 14:01:53 GMT-0500 (Central Daylight Time): Connected to discord
 ```
+## Monitoring
+The monitoring endpoint is available at http://localhost:8080/monitoring/is_alive.
 
 ## Docker
 This bot comes with its own `Dockerfile`.

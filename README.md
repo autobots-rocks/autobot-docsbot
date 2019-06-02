@@ -5,12 +5,16 @@ This bot comes with a simple monitoring endpoint for monitoring the bot being up
 This bot uses the ___docsbot___ role for users to be able to query.
 
 ## Installing
-You need to `npm install` and `cp .env.sample .env` updating your bot token in the `.env` file.
+You need to `npm install` and `cp .env.sample .env` updating your bot token in the `.env` file then `npm run build`.
 
 ```bash
 git clone https://github.com/autobots-rocks/autobot-docsbot
 cd autobot-docsbot
 cp .env.sample .env
+```
+## Building
+```bash
+npm run build
 ```
 
 ## Starting

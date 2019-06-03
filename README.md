@@ -37,6 +37,8 @@ And replace the the `DOCSBOT_SAVE_PATH` variable with the FULL path.
 DOCSBOT_SAVE_PATH=/home/username/location/where/data/should/be/saved
 ```
 
+Finally, create and give yourself the role 'docsbot' on Discord, unless changed in `.env`.
+
 
 ## Building
 ```bash

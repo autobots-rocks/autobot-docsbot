@@ -67,7 +67,7 @@ docker build -t docsbot .
 docker run -d -p8080:8080 --name docsbot docsbot
 ```
 
-### Viewling Logs
+### Viewing Logs
 ```bash
  docker logs -f docsbot
 ```

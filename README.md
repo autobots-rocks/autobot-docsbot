@@ -10,7 +10,7 @@ This bot uses the ___docsbot___ role for users to be able to query.
 
 | Command               | Description                                               |
 |-----------------------|-----------------------------------------------------------|
-| `#update <language>`  | Downloads a language packs.                               |
+| `#update <language>`  | Downloads a language pack from devdocs.io.                |
 | `#list`               | Lists downloaded language packs.                          |
 | `#terms <language>`   | Lists terms searchable by language pack.                  |
 | `#<language> <term>`  | Displays documentation for a language + term.             |

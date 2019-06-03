@@ -1,9 +1,19 @@
-# devdocs.io discord bot
+# devdocs.io + cheat.sh discord bot
 
 Queries devdocs.io json schema for names via !js strict_mode etc.
 This bot comes with a simple monitoring endpoint for monitoring the bot being up (used with kubernetes).
 This bot uses the ___docsbot___ role for users to be able to query.
 
+## Commands
+
+| Command               | Description                                               |
+|-----------------------|-----------------------------------------------------------|
+| `#update <language>`  | Downloads a language packs.                               |
+| `#list`               | Lists downloaded language packs.                          |
+| `#terms <language>`   | Lists terms searchable by language pack.                  |
+| `#<language> <term>`  | Displays documentation for a language + term.             |
+| `#cheat <command>`    | Displays documentation from cheat.sh for a command.       |
+    
 ## Installing
 You need to `npm install` and `cp .env.sample .env` updating your bot token in the `.env` file then `npm run build`.
 

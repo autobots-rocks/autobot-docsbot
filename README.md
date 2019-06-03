@@ -1,3 +1,5 @@
+![logo.png](logo.png)
+
 # devdocs.io + cheat.sh discord bot
 
 Queries devdocs.io json schema for names via !js strict_mode etc.

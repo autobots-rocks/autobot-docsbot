@@ -16,14 +16,23 @@ This bot uses the ___docsbot___ role for users to be able to query.
 | `#<language> <term>`  | Displays documentation for a language + term.             |
 | `#cheat <command>`    | Displays documentation from cheat.sh for a command.       |
     
-## Installing
-You need to `npm install` and `cp .env.sample .env` updating your bot token in the `.env` file then `npm run build`.
+## Setup
+Clone the repo, run `npm install` inside of it, and copy the template `.env` file.
 
 ```bash
 git clone https://github.com/autobots-rocks/autobot-docsbot
 cd autobot-docsbot
+npm install
 cp .env.sample .env
 ```
+
+Next replace your discord token into the `TOKEN` variable in the `.env` file.
+
+```bash
+TOKEN=XXXXXXXXXXX_YOUR_TOKEN_HERE_XXXXXXXXXXXXXX
+```
+
+
 ## Building
 ```bash
 npm run build

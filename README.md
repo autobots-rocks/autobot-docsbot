@@ -32,6 +32,11 @@ Next replace your discord token into the `TOKEN` variable in the `.env` file.
 TOKEN=XXXXXXXXXXX_YOUR_TOKEN_HERE_XXXXXXXXXXXXXX
 ```
 
+And replace the the `DOCSBOT_SAVE_PATH` variable with the FULL path.
+```bash
+DOCSBOT_SAVE_PATH=/home/username/location/where/data/should/be/saved
+```
+
 
 ## Building
 ```bash

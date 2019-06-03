@@ -76,3 +76,8 @@ docker run -d -p8080:8080 --name docsbot docsbot
 ```bash
  docker rm -f docsbot
 ```
+
+## Kubernetes
+To deploy to kubernetes simply run the `make install` command. 
+This will `kubectl apply` the files in the manifests directory installing the deployment and service.
+You will want to edit the image name in the Makefile or the deployment.yaml file.

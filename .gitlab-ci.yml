@@ -11,6 +11,10 @@ before_script:
   - apk --update add git
   - git submodule update --init
 
+after_script:
+  - wget https://raw.githubusercontent.com/mateothegreat/gitlab-ci-discord-webhook/master/send.sh
+  - bash ./send.sh success $DISCORD_WEBHOOK
+
 variables:
   DOCKER_DRIVER: overlay2
 
@@ -49,16 +53,3 @@ deploy-master:
     - apk --update add git
     - git submodule update --init
     - make delete install
-
-notify-success:
-  stage: notify-success
-  when: on_success
-  script:
-    - wget https://raw.githubusercontent.com/mateothegreat/gitlab-ci-discord-webhook/master/send.sh
-    - bash ./send.sh success $DISCORD_WEBHOOK
-notify-failure:
-  stage: notify-failure
-  when: on_failure
-  script:
-    - wget https://raw.githubusercontent.com/mateothegreat/gitlab-ci-discord-webhook/master/send.sh
-    - bash ./send.sh failure $DISCORD_WEBHOOK

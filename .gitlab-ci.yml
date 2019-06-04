@@ -16,9 +16,6 @@ after_script:
   - wget https://raw.githubusercontent.com/mateothegreat/gitlab-ci-discord-webhook/master/send.sh
   - bash ./send.sh success $DISCORD_WEBHOOK
 
-variables:
-  DOCKER_DRIVER: overlay2
-
 build:
 
   stage: build

@@ -24,6 +24,9 @@ build:
   script:
     - echo PORT=$PORT >> .env
     - echo TOKEN=$TOKEN >> .env
+    - echo DOCSBOT_SAVE_PATH=$DOCSBOT_SAVE_PATH >> .env
+    - echo DOCSBOT_ADMIN_ROLE_NAME=$DOCSBOT_ADMIN_ROLE_NAME >> .env
+    - echo DOCSBOT_LIMIT_CHARS=$DOCSBOT_LIMIT_CHARS >> .env
 
     - docker build -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA" .
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY

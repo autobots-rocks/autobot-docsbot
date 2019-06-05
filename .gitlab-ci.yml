@@ -50,4 +50,4 @@ deploy-master:
     - kubectl config use-context default-context
     - apk --update add git
     - git submodule update --init
-    - make delete install
+    - make install

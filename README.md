@@ -8,6 +8,8 @@ Queries devdocs.io json schema for names via !js strict_mode etc.
 This bot comes with a simple monitoring endpoint for monitoring the bot being up (used with kubernetes).
 This bot uses the ___docsbot___ role for users to be able to query.
 
+__Additionaly, this bot comes with the `!ping` command to show bot latency and uptime.__
+
 ## Commands
 
 | Command               | Description                                               |
@@ -81,6 +83,17 @@ Sun Jun 02 2019 14:01:52 GMT-0500 (Central Daylight Time): Command Registered: !
 Sun Jun 02 2019 14:01:52 GMT-0500 (Central Daylight Time): Bot Started
 Sun Jun 02 2019 14:01:53 GMT-0500 (Central Daylight Time): Connected to discord
 ```
+
+## Installing languages
+
+Once up and running you'll need to install languages that match devdocs.io.
+i.e.:
+
+```bash
+##update javascript
+##update kotlin
+```
+
 ## Monitoring
 The monitoring endpoint is available at http://localhost:8080/monitoring/is_alive.
 

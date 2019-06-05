@@ -11,11 +11,6 @@ before_script:
   - apk --update add git
   - git submodule update --init
 
-after_script:
-  - apk --update add bash curl
-  - wget https://raw.githubusercontent.com/mateothegreat/gitlab-ci-discord-webhook/master/send.sh
-  - bash ./send.sh success $DISCORD_WEBHOOK
-
 build:
 
   stage: build
@@ -48,6 +43,8 @@ deploy-master:
     - kubectl config set-credentials gitlab --token="$K8_TOKEN"
     - kubectl config set-context default-context --cluster=kube-cluster --user=gitlab
     - kubectl config use-context default-context
-    - apk --update add git
+    - apk --update add git bash curl
     - git submodule update --init
     - make delete install
+    - wget https://raw.githubusercontent.com/mateothegreat/gitlab-ci-discord-webhook/master/send.sh
+    - bash ./send.sh success $DISCORD_WEBHOOK "Deployed to Kubernetes!"

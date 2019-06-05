@@ -12,7 +12,7 @@ This bot uses the ___docsbot___ role for users to be able to query.
 
 | Command               | Description                                               |
 |-----------------------|-----------------------------------------------------------|
-| `#update <language>`  | Downloads a language pack from devdocs.io.                |
+| `##update <language>` | Downloads a language pack from devdocs.io.                |
 | `#list`               | Lists downloaded language packs.                          |
 | `#terms <language>`   | Lists terms searchable by language pack.                  |
 | `#<language> <term>`  | Displays documentation for a language + term.             |
@@ -28,19 +28,31 @@ npm install
 cp .env.sample .env
 ```
 
-Next replace your discord token into the `TOKEN` variable in the `.env` file.
+The `.env` file has the following configurable options which are required:
 
 ```bash
-TOKEN=XXXXXXXXXXX_YOUR_TOKEN_HERE_XXXXXXXXXXXXXX
+PORT=8080
+TOKEN=<your discord bot token>
+
+#
+# Initial configuration
+#
+DOCSBOT_SAVE_PATH=<some full path to a direcgtory save json files to>
+DOCSBOT_ADMIN_ROLE_NAME=docsbot
+DOCSBOT_LIMIT_CHARS=1000
+
+#
+# Command Prefixes
+#
+DOCSBOT_PREFIX_SEARCH=#
+DOCSBOT_PREFIX_CHEAT=#cheat
+DOCSBOT_PREFIX_LIST=##list
+DOCSBOT_PREFIX_TERMS=##terms
+DOCSBOT_PREFIX_UPDATE=##update
 ```
 
-And replace the the `DOCSBOT_SAVE_PATH` variable with the FULL path.
-```bash
-DOCSBOT_SAVE_PATH=/home/username/location/where/data/should/be/saved
-```
 
-Finally, create and give yourself the role 'docsbot' on Discord, unless changed in `.env`.
-
+Make sure the role you specified exists and is assigned to the user(s) that want to use any of the docsbot commands!
 
 ## Building
 ```bash

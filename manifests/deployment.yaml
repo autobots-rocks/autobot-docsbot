@@ -32,4 +32,10 @@ spec:                               # The official specification matching object
             initialDelaySeconds: 10
             timeoutSeconds:      5
             periodSeconds:       5
-
+          volumeMounts:
+            - name: $APP
+              mountPath: /var/docs
+      volumes:
+        - name: $APP
+          persistentVolumeClaim:
+            claimName: $APP

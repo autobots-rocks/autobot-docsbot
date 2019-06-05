@@ -38,4 +38,4 @@ spec:                               # The official specification matching object
       volumes:
         - name: $APP
           persistentVolumeClaim:
-            claimName: $APP
+            claimName: $GCE_DISK

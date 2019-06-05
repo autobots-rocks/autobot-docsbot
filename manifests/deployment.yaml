@@ -11,6 +11,8 @@ spec:                               # The official specification matching object
       labels:                       # Labels used to group/categorize objects
         app: $APP                  # The name of this template
     spec:                           # Specification of the desired behaviour of this pod
+      securityContext:
+        fsGroup: 1000
       imagePullSecrets:
         - name: $IMAGE_SECRET
       containers:                   # List of containers belonging to this pod (cannot be changed/updated)

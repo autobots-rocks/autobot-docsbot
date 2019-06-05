@@ -45,7 +45,7 @@ deploy-master:
     - kubectl config use-context default-context
     - apk --update add git bash curl
     - git submodule update --init
-    - kubectl delete deploy/autobot-docsbot
+    - kubectl delete deploy/autobot-docsbot || true
     - make install
     - wget https://raw.githubusercontent.com/mateothegreat/gitlab-ci-discord-webhook/master/send.sh
     - bash ./send.sh success $DISCORD_WEBHOOK "Deployed to Kubernetes!"

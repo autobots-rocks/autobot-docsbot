@@ -10,7 +10,7 @@ include .make/Makefile.inc
 VERSION 		?= $(shell git rev-parse HEAD)
 IMAGE   		?= registry.gitlab.com/autobots.rocks/bots/autobot-docsbot:$(VERSION)
 IMAGE_SECRET	?= docker-registry-autobot-docsbot
-APP				?= autobot-docsbot
+APP				?= autobot-docsbot2
 NS				?= default
 PORT			?= 8080
 

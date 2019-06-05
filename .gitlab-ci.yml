@@ -12,7 +12,7 @@ before_script:
   - git submodule update --init
 
 after_script:
-  - apk --update add bash
+  - apk --update add bash curl
   - wget https://raw.githubusercontent.com/mateothegreat/gitlab-ci-discord-webhook/master/send.sh
   - bash ./send.sh success $DISCORD_WEBHOOK
 

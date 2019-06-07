@@ -30,6 +30,7 @@ build:
     - echo DOCSBOT_PREFIX_TERMS=$DOCSBOT_PREFIX_TERMS >> .env
     - echo DOCSBOT_PREFIX_UPDATE=$DOCSBOT_PREFIX_UPDATE >> .env
     - echo PING_PREFIX=$PING_PREFIX >> .env
+    - echo DOCSBOT_PREFIX_HELP=$DOCSBOT_PREFIX_HELP >> .env
 
     - docker build -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA" .
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY

@@ -12,13 +12,14 @@ __Additionaly, this bot comes with the `!ping` command to show bot latency and u
 
 ## Commands
 
-| Command               | Description                                               |
-|-----------------------|-----------------------------------------------------------|
-| `##update <language>` | Downloads a language pack from devdocs.io.                |
-| `#list`               | Lists downloaded language packs.                          |
-| `#terms <language>`   | Lists terms searchable by language pack.                  |
-| `#<language> <term>`  | Displays documentation for a language + term.             |
-| `#cheat <command>`    | Displays documentation from cheat.sh for a command.       |
+| Command                   | Description                                               |
+|---------------------------|-----------------------------------------------------------|
+| `;<language> <function>`  | Searches <language> for <function>                        |
+| `##update <language>`     | Downloads a language pack from devdocs.io.                |
+| `#list`                   | Lists downloaded language packs.                          |
+| `#terms <language>`       | Lists terms searchable by language pack.                  |
+| `#<language> <term>`      | Displays documentation for a language + term.             |
+| `#cheat <command>`        | Displays documentation from cheat.sh for a command.       |
     
 ## Setup
 Clone the repo, run `npm install` inside of it, and copy the template `.env` file.
@@ -46,7 +47,7 @@ DOCSBOT_LIMIT_CHARS=1000
 #
 # Command Prefixes
 #
-DOCSBOT_PREFIX_SEARCH=#
+DOCSBOT_PREFIX_SEARCH=;
 DOCSBOT_PREFIX_CHEAT=#cheat
 DOCSBOT_PREFIX_LIST=##list
 DOCSBOT_PREFIX_TERMS=##terms

@@ -15,10 +15,9 @@ __Additionaly, this bot comes with the `!ping` command to show bot latency and u
 | Command                   | Description                                               |
 |---------------------------|-----------------------------------------------------------|
 | `;<language> <function>`  | Searches <language> for <function>                        |
-| `##update <language>`     | Downloads a language pack from devdocs.io.                |
-| `#list`                   | Lists downloaded language packs.                          |
-| `#terms <language>`       | Lists terms searchable by language pack.                  |
-| `#<language> <term>`      | Displays documentation for a language + term.             |
+| `;;update <language>`     | Downloads a language pack from devdocs.io.                |
+| `;;list`                  | Lists downloaded language packs.                          |
+| `;;terms <language>`      | Lists terms searchable by language pack.                  |
 | `#cheat <command>`        | Displays documentation from cheat.sh for a command.       |
     
 ## Setup

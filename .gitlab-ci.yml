@@ -21,6 +21,8 @@ build:
   script:
     - echo PORT=$PORT >> .env
     - echo TOKEN=$TOKEN >> .env
+    - echo NAMESPACE=$NAMESPACE >> .env
+    - echo MODULE_PATTERN=$MODULE_PATTERN >> .env
     - echo DOCSBOT_SAVE_PATH=$DOCSBOT_SAVE_PATH >> .env
     - echo DOCSBOT_ADMIN_ROLE_NAME=$DOCSBOT_ADMIN_ROLE_NAME >> .env
     - echo DOCSBOT_LIMIT_CHARS=$DOCSBOT_LIMIT_CHARS >> .env

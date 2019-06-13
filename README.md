@@ -4,11 +4,11 @@
 
 # devdocs.io + cheat.sh discord bot
 
-Queries devdocs.io json schema for names via !js strict_mode etc.
+Queries [devdocs.io](https://devdocs.io/) json schema for names via !js strict_mode etc.
 This bot comes with a simple monitoring endpoint for monitoring the bot being up (used with kubernetes).
-This bot uses the ___docsbot___ role for users to be able to query.
+This bot uses the ___docsbot___ role by default for users who are allowed to query.
 
-__Additionaly, this bot comes with the `!ping` command to show bot latency and uptime.__
+__Additionally, this bot comes with the `;;ping` command to show bot latency and uptime.__
 
 ## Commands
 
@@ -18,7 +18,7 @@ __Additionaly, this bot comes with the `!ping` command to show bot latency and u
 | `;;update <language>`     | Downloads a language pack from devdocs.io.                |
 | `;;list`                  | Lists downloaded language packs.                          |
 | `;;terms <language>`      | Lists terms searchable by language pack.                  |
-| `#cheat <command>`        | Displays documentation from cheat.sh for a command.       |
+| `;;cheat <command>`        | Displays documentation from cheat.sh for a command.       |
     
 ## Setup
 Clone the repo, run `npm install` inside of it, and copy the template `.env` file.
@@ -47,10 +47,10 @@ DOCSBOT_LIMIT_CHARS=1000
 # Command Prefixes
 #
 DOCSBOT_PREFIX_SEARCH=;
-DOCSBOT_PREFIX_CHEAT=#cheat
-DOCSBOT_PREFIX_LIST=##list
-DOCSBOT_PREFIX_TERMS=##terms
-DOCSBOT_PREFIX_UPDATE=##update
+DOCSBOT_PREFIX_CHEAT=;;cheat
+DOCSBOT_PREFIX_LIST=;;list
+DOCSBOT_PREFIX_TERMS=;;terms
+DOCSBOT_PREFIX_UPDATE=;;update
 ```
 
 
@@ -90,8 +90,8 @@ Once up and running you'll need to install languages that match devdocs.io.
 i.e.:
 
 ```bash
-##update javascript
-##update kotlin
+;;update javascript
+;;update kotlin
 ```
 
 ## Monitoring

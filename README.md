@@ -1,5 +1,6 @@
 ![logo.png](logo.png)
   
+![screen2.png](screen2.png)
 ![screen1.png](screen1.png)
 
 # devdocs.io + cheat.sh discord bot
@@ -19,7 +20,10 @@ __Additionally, this bot comes with the `;;ping` command to show bot latency and
 | `;;list`                                      | Lists downloaded language packs.                          |
 | `;;terms <language>`                          | Lists terms searchable by language pack.                  |
 | `;;cheat <command>`                           | Displays documentation from cheat.sh for a command.       |
+| `;;aliaslist`                                 | Lists configured aliases.                                 |
 | `;;aliasadd language=javascript,alias=js`     | Create or replace a new language alias.                   |
+| `;;aliasdelete language=javascript`           | Deletes alias(es) associated with a language.             |
+    
     
 ## Setup
 Clone the repo, run `npm install` inside of it, and copy the template `.env` file.
@@ -52,7 +56,15 @@ DOCSBOT_PREFIX_CHEAT=;;cheat
 DOCSBOT_PREFIX_LIST=;;list
 DOCSBOT_PREFIX_TERMS=;;terms
 DOCSBOT_PREFIX_UPDATE=;;update
+
+#
+# Aliases Configuration
+#
+DOCSBOT_ALIASES_CONFIG_PATH=<some path>.json
 DOCSBOT_PREFIX_ALIAS_ADD=;;aliasadd
+DOCSBOT_PREFIX_ALIAS_LIST=;;aliaslist
+DOCSBOT_PREFIX_ALIAS_DELETE=;;aliasdelete
+
 ```
 
 

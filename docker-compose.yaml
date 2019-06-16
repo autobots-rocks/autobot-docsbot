@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  bot:
+    build:
+      context: .
+    container_name: docsbot
+    ports:
+      - 8080:8080

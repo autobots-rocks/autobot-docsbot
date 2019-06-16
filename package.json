@@ -11,7 +11,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@autobot/common": "^1.1.24",
+        "@autobot/common": "^1.1.45",
         "@autobot/module-docsbot": "^1.0.185",
         "@autobot/module-ping": "0.0.5",
         "@nestjs/common": "^6.2.4",

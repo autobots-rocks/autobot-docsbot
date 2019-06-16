@@ -35,3 +35,9 @@ create-disk:
 delete-disk:
 
 	gcloud compute disks delete $(GCE_DISK) --zone $(GCE_ZONE)
+
+build-local:
+
+	cd ~/workspace/work/autobots && make all PROJECT=autobot-module-docsbot
+	cd ~/workspace/work/autobots/autobot-docsbot && npm install @autobot/module-docsbot@latest
+	cd ~/workspace/work/autobots/autobot-docsbot && tsc && node dist/main.js

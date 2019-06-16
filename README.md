@@ -19,7 +19,7 @@ __Additionally, this bot comes with the `;;ping` command to show bot latency and
 | `;;list`                                      | Lists downloaded language packs.                          |
 | `;;terms <language>`                          | Lists terms searchable by language pack.                  |
 | `;;cheat <command>`                           | Displays documentation from cheat.sh for a command.       |
-| `;;alias language=javascript,alias=js`        | Create a new language alias.                              |
+| `;;aliasadd language=javascript,alias=js`     | Create or replace a new language alias.                   |
     
 ## Setup
 Clone the repo, run `npm install` inside of it, and copy the template `.env` file.
@@ -52,6 +52,7 @@ DOCSBOT_PREFIX_CHEAT=;;cheat
 DOCSBOT_PREFIX_LIST=;;list
 DOCSBOT_PREFIX_TERMS=;;terms
 DOCSBOT_PREFIX_UPDATE=;;update
+DOCSBOT_PREFIX_ALIAS_ADD=;;aliasadd
 ```
 
 

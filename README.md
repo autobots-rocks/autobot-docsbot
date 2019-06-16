@@ -12,13 +12,14 @@ __Additionally, this bot comes with the `;;ping` command to show bot latency and
 
 ## Commands
 
-| Command                   | Description                                               |
-|---------------------------|-----------------------------------------------------------|
-| `;<language> <function>`  | Searches <language> for <function>                        |
-| `;;update <language>`     | Downloads a language pack from devdocs.io.                |
-| `;;list`                  | Lists downloaded language packs.                          |
-| `;;terms <language>`      | Lists terms searchable by language pack.                  |
-| `;;cheat <command>`        | Displays documentation from cheat.sh for a command.       |
+| Command                                       | Description                                               |
+|-----------------------------------------------|-----------------------------------------------------------|
+| `;<language> <function>`                      | Searches <language> for <function>                        |
+| `;;update <language>`                         | Downloads a language pack from devdocs.io.                |
+| `;;list`                                      | Lists downloaded language packs.                          |
+| `;;terms <language>`                          | Lists terms searchable by language pack.                  |
+| `;;cheat <command>`                           | Displays documentation from cheat.sh for a command.       |
+| `;;alias language=javascript,alias=js`        | Create a new language alias.                              |
     
 ## Setup
 Clone the repo, run `npm install` inside of it, and copy the template `.env` file.

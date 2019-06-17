@@ -41,3 +41,9 @@ build-local:
 	cd ~/workspace/work/autobots && make all PROJECT=autobot-module-docsbot
 	cd ~/workspace/work/autobots/autobot-docsbot && npm install @autobot/module-docsbot@latest
 	cd ~/workspace/work/autobots/autobot-docsbot && tsc && node dist/main.js
+
+release:
+
+	cd ~/workspace/work/autobots && make all PROJECT=autobot-module-docsbot
+	cd ~/workspace/work/autobots/autobot-docsbot && npm install @autobot/module-docsbot@latest
+	cd ~/workspace/work/autobots/autobot-docsbot && git commit -am"$(MESSAGE)" && git push

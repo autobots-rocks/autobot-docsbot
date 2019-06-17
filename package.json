@@ -12,7 +12,7 @@
     "license": "ISC",
     "dependencies": {
         "@autobot/common": "^1.1.53",
-        "@autobot/module-docsbot": "^1.0.215",
+        "@autobot/module-docsbot": "^1.0.216",
         "@autobot/module-ping": "0.0.5",
         "@nestjs/common": "^6.2.4",
         "@nestjs/core": "^6.2.4",

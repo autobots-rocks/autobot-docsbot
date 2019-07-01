@@ -10,6 +10,9 @@ This bot comes with a simple monitoring endpoint for monitoring the bot being up
 This bot uses the ___docsbot___ role by default for users who are allowed to query.
 
 __Additionally, this bot comes with the `;;ping` command to show bot latency and uptime.__
+## Module
+
+This repository represents the actual bot itself and uses the following module: https://github.com/autobots-rocks/autobot-module-docsbot.
 
 ## Commands
 
